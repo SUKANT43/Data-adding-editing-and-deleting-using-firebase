@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+}
+body{
+    padding: 20px;
+}
+h3{
+
+    font-weight: 600;
+    margin: 15px 0;
+
+}
+
+form{
+    width: 300px;
+}
+form .form-group{
+        display: flex;
+        flex-direction: column;
+}
+form .form-group label{
+    font-weight:500 ;
+}
+form .form-group input{
+    font-size: 16px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(210, 208, 208);
+    border-radius:2px ;
+    margin: 10px 0;
+    
+}
+
+form button{
+    padding: 5px 5px;
+    display: flex;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    border: none;
+    color: white;
+    background-color: tomato;
+}
+
+table{
+    bottom: 1px solid #ccc;
+    border-collapse:collapse ;
+    min-width: 600px;
+}
+table thead tr{
+    background-color: teal;
+    color: white;
+    border-color:tomato ;
+}
+table thead th{
+    border-color:tomato ;
+    font-weight: 400;
+}
+table td,
+table th{
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}

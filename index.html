@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD with Firebase</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h3>CRUD with Firebase</h3>
+    <!-- Form for adding/updating user -->
+    <form action="#" id="frm">
+        <input type="hidden" id="id" /> <!-- Hidden field to hold user ID for editing -->
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" id="age" placeholder="Enter your age">
+        </div>
+        <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="Enter your city">
+        </div>
+        <button type="submit" id="btnSubmit">Save</button>
+    </form>
+
+    <!-- Table for displaying users -->
+    <table>
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="tblBody">
+            <!-- Dynamic rows will be added here -->
+        </tbody>
+    </table>
+
+    <!-- Firebase and Script Files -->
+    <script src="js/script.js" type="module"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
